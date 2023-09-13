@@ -1,0 +1,26 @@
+.one
+{background-color: blue;
+margin-right: 30%;
+color: white;
+padding: 50px 20px 50px 50px;}
+.two
+{background-color: green;
+margin-left: 30%;
+color: white;
+padding: 50px 20px 50px 50px;}
+.three
+{background-color: blueviolet;
+ margin-right: 30%;
+color: white;
+padding: 50px 20px 50px 50px;}
+.four
+{background-color: red;
+margin-left: 30%;
+color: white;
+padding: 50px 20px 50px 50px;}
+.five{
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
