@@ -1,6 +1,8 @@
 .one
 {
-    background-color: green;
+    height: 55px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: white;
     padding: 10px;
     text-align: center;
@@ -8,6 +10,87 @@
 .two
 {
     background-color: black;
-    padding: 5px;
+    padding: 20px;
     
+}
+.Al
+{
+    color: aliceblue;
+    padding-right: 10;
+    text-decoration: none;
+}
+.Ds
+{
+    color: aliceblue;
+    padding-right: 10;
+    text-decoration: none;
+}
+.La
+{
+    color: aliceblue;
+    padding-right: 10;
+    text-decoration: none;
+}
+.three
+{
+    margin-left: 15%;
+    width: 333px;
+    height: 300px;
+}
+.four
+{
+    width: 333px;
+    height: 300px;
+    margin-left: 45% ;
+    margin-top: -325px;
+}
+.five
+{
+    width: 333px;
+    height: 300px;
+    margin-left: 75% ;
+    margin-top: -320px;
+}
+.three h1
+{
+    text-align: center;
+    color: green;
+}
+.four h1
+{
+    text-align: center;
+    color: green;
+}
+.five h1
+{
+    text-align: center;
+    color: green;
+}
+.one:hover
+{
+    color: black;
+}
+.three:hover
+{
+    background-color: red;
+}
+.four:hover
+{
+    background-color: yellow;
+}
+.five:hover
+{
+    background-color: green;
+}
+.Al:hover
+{
+    color: red;
+}
+.Ds:hover
+{
+    color: yellow;
+}
+.La:hover
+{
+    color: green;
 }
