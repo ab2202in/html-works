@@ -1,3 +1,9 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@100&display=swap');
+
+/* font-family: 'Inclusive Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+.p{font-family: 'Poppins', sans-serif;}
 .one{background-color: blanchedalmond;}
 .two{background-image: url(2.jpeg);
 background-size: cover;}

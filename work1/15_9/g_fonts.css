@@ -1,0 +1,27 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+  /* font-family: 'Roboto', sans-serif; */
+  @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+/* font-family: 'Covered By Your Grace', cursive; */
+.a
+{
+font-family: 'Roboto', sans-serif;
+text-align: center;
+color: rgb(39, 152, 197);
+}
+.b
+{
+font-size: larger;
+}
+.c
+{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: larger;
+}
+img{
+    border-radius: 50%;
+}
+.p
+{
+    font-family: 'Covered By Your Grace', cursive;
+}
