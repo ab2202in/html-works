@@ -5,14 +5,13 @@
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
-.one{
-    background-image: #333535;
-    height: 550px;
-}
 .two{
     margin-left: 50%;
     padding: 15px;
     margin-top: -55px;
+}
+.ody{
+    background-image: url(3.jpg);
 }
 a{
     color: aliceblue;
@@ -35,4 +34,71 @@ h5{
     font-size: 100;
     margin-top: -1cm;
     color: white;
+}
+.button {
+    background-image: linear-gradient(rgb(13, 13, 105), purple);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: -4cm;
+    margin-left: 23.5cm;
+    cursor: pointer;
+  }
+  .three{
+    color: aliceblue;
+    width: 20%;
+    margin-top: -4cm;
+  }
+  .four{
+    color: aliceblue;
+    width: 20%;
+    margin-left: 25%;
+    margin-top: -7cm;
+  }
+  .five{
+    color: aliceblue;
+    width: 20%;
+    margin-left: 50%;
+    margin-top: -7cm;
+  }
+  .six{
+    color: aliceblue;
+    width: 20%;
+    margin-left: 75%;
+    margin-top: -7cm;
+  }
+  .b{
+    padding: 5cm;
+    background-color: #333535;
+    height: 20px;
+    
+  }
+.three h4{
+    font-size: x-large;
+}
+.four h4{
+    font-size: x-large;
+}
+.five h4{
+    font-size: x-large;
+}
+.six h4{
+    font-size: x-large;
+}
+.c{
+    
+}
+.d{
+    
+}
+.e{
+    
+}
+.f{
+ 
 }
