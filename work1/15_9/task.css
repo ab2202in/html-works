@@ -11,7 +11,10 @@
     margin-top: -55px;
 }
 .ody{
-    background-image: url(3.jpg);
+    background-image: url(../images/3.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
 }
 a{
     color: aliceblue;
@@ -48,57 +51,75 @@ h5{
     margin-top: -4cm;
     margin-left: 23.5cm;
     cursor: pointer;
-  }
-  .three{
-    color: aliceblue;
-    width: 20%;
-    margin-top: -4cm;
-  }
-  .four{
-    color: aliceblue;
-    width: 20%;
-    margin-left: 25%;
-    margin-top: -7cm;
-  }
-  .five{
-    color: aliceblue;
-    width: 20%;
-    margin-left: 50%;
-    margin-top: -7cm;
-  }
-  .six{
-    color: aliceblue;
-    width: 20%;
-    margin-left: 75%;
-    margin-top: -7cm;
-  }
-  .b{
-    padding: 5cm;
+}
+.b{
+  padding: 5cm;
     background-color: #333535;
     height: 20px;
     
-  }
-.three h4{
-    font-size: x-large;
 }
-.four h4{
-    font-size: x-large;
+.three{
+  color: aliceblue;
+  width: 20%;
+  margin-top: -4cm;
+  padding: 10px;
 }
-.five h4{
-    font-size: x-large;
+.four{
+  color: aliceblue;
+  width: 20%;
+  margin-left: 25%;
+  margin-top: -9.2cm;
+  padding: 10px;
 }
-.six h4{
-    font-size: x-large;
+.five{
+  color: aliceblue;
+  width: 20%;
+  margin-left: 50%;
+  margin-top: -8.7cm;
+  padding: 10px;
 }
-.c{
-    
-}
-.d{
-    
-}
-.e{
-    
+.six{
+  color: aliceblue;
+  width: 20%;
+  margin-left: 75%;
+  margin-top: -8.7cm;
+  padding: 10px;
 }
 .f{
- 
+  margin-left: 3cm ;
+  size: 3px;
+}
+.e{
+  margin-left: 3cm ;
+}
+.c{
+  margin-left: 3cm ;
+}
+.d{
+  margin-left: 3cm ;
+}
+.about{
+  margin-top: 5cm;
+}
+.what .b2,.b3,.b4{
+  background-image: linear-gradient(rgb(13, 13, 105), purple);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 3cm
+}
+.what .b2{
+  margin-left: 25%;
+}
+.we p{
+  color: aliceblue;
+  text-align: center;
+  font-size: larger; 
+  padding: 1cm 3cm 5cm 5cm;
+  font-family: 'Heebo', sans-serif;
 }
