@@ -26,8 +26,12 @@ h3{
     margin-top: -1.75cm;
     color: rgb(155, 70, 235);
 }
+.hel{
+  margin-top: 3cm;
+  color: white;
+  text-align: center;
+}
 h4{
-    text-align: center;
     margin-top: 3cm;
     color: white;
 }
@@ -122,4 +126,67 @@ h5{
   font-size: larger; 
   padding: 1cm 3cm 5cm 5cm;
   font-family: 'Heebo', sans-serif;
+}
+.last{
+  background-color: #333535;
+  padding: 2cm;
+}
+.drp{
+  margin-left: 9cm;
+}
+.des{
+  margin-left:8.5cm;
+  margin-top: 1cm;
+  font-size: x-large;
+}
+.tik{
+  margin-left: 24.5cm;
+  margin-top: -10cm;
+  height: 44px;
+}
+.pro{
+  margin-left:23cm;
+  margin-top: -8cm;
+  font-size: x-large;
+}
+.mar{
+  margin-left: 38.5cm;
+  margin-top: -10.5cm;
+}
+.net{
+  margin-left:37cm;
+  margin-top: -8.5cm;
+  font-size: x-large;
+}
+.p1{
+  width: 200px;
+  margin-left: 7.5cm;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+}
+.p2{
+  width: 200px;
+  margin-left: 22.5cm;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+}
+.p3{
+  width: 200px;
+  margin-left: 37cm;
+  font-size: larger;
+  color: aliceblue;
+  text-align: center;
+}
+.how{
+  text-align: center;
+  font-size: xxx-large;
+}
+.p4{
+  color: aliceblue;
+  text-align: center;
+  font-size: x-large;
+  margin-left: 20%;
+  margin-right: 20%;
 }
