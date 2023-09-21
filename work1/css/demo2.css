@@ -1,0 +1,27 @@
+.demo .blue{
+    color: blue;
+}
+.demo .green{
+    color: green;
+}
+.demo .red{
+    color: red;
+}
+.red h2{
+    font-size: 30px;
+}
+.blue h1{
+    font-size: 40px;
+}
+.green p{
+    font-size: 20px;
+}
+.green h2{
+    font-size: 30px;
+}
+.red p{
+    font-size: 20px;
+}
+.green h1{
+    font-size: 40px;
+}

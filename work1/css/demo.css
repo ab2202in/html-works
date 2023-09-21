@@ -1,0 +1,13 @@
+.he{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.border{
+    border: 10px double black;
+    padding: 50px;
+    margin: 3px;
+}
+.goat{
+    padding: 100px 50px;
+}
