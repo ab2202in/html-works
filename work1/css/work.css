@@ -1,0 +1,149 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* font-family: 'Heebo', sans-serif; */
+.feli{
+    font-family: 'Great Vibes', cursive;
+    color: rgb(226, 188, 19);
+    font-size: 100px;
+    margin-top: 50px;
+
+}
+.hed{
+    text-align: center;
+    margin-top: -600px;
+}
+.bg img{
+    width: 100%;
+    height: 75%;   
+}
+.best
+{
+    color: aliceblue;
+    font-size: 50px;
+    margin-top: -50px;
+    font-family: 'Heebo', sans-serif;
+
+}
+.k{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+    margin-top: -50px;
+    border-radius: 50px ;
+}
+ .j{
+    width: 100px;
+    height: 100px;
+    margin-left: 330px;
+    margin-top: -50px;
+    border-radius: 50px ;
+ } 
+ .l{
+    width: 100px;
+    height: 100px;
+    margin-left: 320px;
+    margin-top: -50px;
+    border-radius: 50px ;
+ }  
+ .m{
+    width: 100px;
+    height: 100px;
+    margin-left: 330px;
+    margin-top: -50px;
+    border-radius: 50px ;
+ }
+
+.rec{
+    padding: 100px;
+    text-align: justify;
+}
+.ki, .ji, .li, .mi{
+    display: inline-block;
+    margin-left: 200px;
+    color: aliceblue;
+}
+.des{
+    margin-top: -100px;
+    display: block;
+}
+.we{
+    width: 50%;
+}
+.ve{
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-family: 'Heebo', sans-serif;
+}
+.ri{
+    margin-left: 50px;
+    line-height: 2;
+}
+.we2 img{
+    margin-left: 60%;
+    margin-top: -350px;
+    width: 35%;
+}
+.n, .p, .o{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px ;
+    margin-left: 150px;
+}
+.q, .r, .s{
+    display: inline-block;
+    padding-left: 110px;
+    color: rgb(71, 71, 71);
+}
+.book{
+    background-color: red;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.about .abo{
+    font-family: 'Italianno', cursive; 
+    color: brown;
+}
+.about .kusi{
+    font-family: 'Heebo', sans-serif;
+    margin-top: -45px;
+}
+.about{
+    margin-left: 50px;
+}
+.last p{
+    margin-left: 50px;
+    width: 60%;
+    line-height: 2;
+}
+.special{
+    margin-left: 50px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.t, .u, .v{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+.beef{
+    margin-left: -55px;
+}
+.final{
+    margin-left: 70%;
+    margin-top: -600px;
+}
+h3{
+    font-size: 20px;
+}
