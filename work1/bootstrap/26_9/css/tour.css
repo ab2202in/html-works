@@ -1,0 +1,28 @@
+img{
+    width: 100%;
+}
+.broo{
+    width: 225px;
+    height: 225px;
+    margin-top: -20px;
+}
+.bg{
+    background-image: url(../images/acc12.jpg);
+    height: 550px;
+}
+a{
+    color: black;
+    margin-left: 25px;
+    width: 100%;
+    text-decoration: none;
+}
+.bae{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.well{
+    color: orange;
+}
+.ho{
+    color: green;
+}
