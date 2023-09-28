@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+img{
+    width: 100%;
+}
+.bg{
+    background-image: url(../images/kit2.jpg);
+}
+.feli{
+    font-family: 'Great Vibes', cursive;
+    color: rgb(226, 188, 19);
+    font-size: 100px;
+    margin-top: 50px;
+}
+.best
+{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Heebo', sans-serif;
+}
+.k{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px ;
+}
+ .j{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px ;
+ } 
+ .l{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px ;
+ }  
+ .m{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px ;
+ }
+.grilled{
+    color: aliceblue;
+}
+figcaption{
+    color: aliceblue;
+}
+.grill{
+    padding: 50px;
+}
+.ve{
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.re{
+    padding-left: 100px;
+}
+.n, .p, .o{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px ;
+}
+.re figcaption{
+    color: black;
+}
+.book{
+    background-color: red;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sec{
+    padding-top: 75px;
+}
+.third .abo{
+    font-family: 'Italianno', cursive; 
+    color: brown;
+}
+.third .kusi{
+    font-family: 'Heebo', sans-serif;
+}

@@ -69,13 +69,19 @@ a{
 .l h1,p{
     padding: 20px;
 }
-
-.map{
-    height: 300px;
-}
 .m{
     padding: 40px;
 }
 .m a{
     padding: 5px;
+}
+.now{
+  background-color: white; 
+  border: solid;
+  color: white;
+  padding: 15px 32px; 
+  color: green; 
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
