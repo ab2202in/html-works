@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+img{ width: 100%;}
+.banner{
+    background-image: url(../images/2.jpg);
+    height: 420px;
+    background-size: cover;
+}
+.banner .t{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(255, 187, 0);font-size: 100px;
+    padding-top: 100px;
+}
+.coffee{
+    color: aliceblue;
+}
+.banner p{
+    color: aliceblue;
+    padding-right: 100px;
+}
+.banner .btn{
+    padding: 10px 30px;
+}
+.ser{
+    color: rgb(255, 187, 0);
+}
+.second .t{
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-top: 100px;
+}
+.second img{
+    border-radius: 50%;
+    padding-top: 20px;
+}
+.tt{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: xx-large;
+    padding-top: 20px;
+}
+.third{
+    background-color: black;
+}
+.third h1{
+    color:rgb(255, 187, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 100px 430px;
+}
+.third .btn{
+    padding: 10px 90px;
+}

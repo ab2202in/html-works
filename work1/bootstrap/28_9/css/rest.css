@@ -83,3 +83,20 @@ figcaption{
 .third .kusi{
     font-family: 'Heebo', sans-serif;
 }
+.third{
+    padding-left: 100px;
+}
+.special{
+    padding-top: 50px;
+}
+.t{
+    
+    height: 200px;
+}
+.third figcaption{
+    color: black;
+}
+.four{
+    padding: 100px;
+    height: 1000px;
+}
