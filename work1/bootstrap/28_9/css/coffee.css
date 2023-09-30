@@ -3,7 +3,7 @@
 img{ width: 100%;}
 .banner{
     background-image: url(../images/2.jpg);
-    height: 420px;
+    height: 500px;
     background-size: cover;
 }
 .banner .t{
@@ -24,6 +24,9 @@ img{ width: 100%;}
 .ser{
     color: rgb(255, 187, 0);
 }
+.second{
+    padding-bottom: 100px;
+}
 .second .t{
     font-family: 'Barlow Condensed', sans-serif;
     padding-top: 100px;
@@ -39,12 +42,24 @@ img{ width: 100%;}
 }
 .third{
     background-color: black;
+    padding-left: 100px ;
 }
 .third h1{
     color:rgb(255, 187, 0);
     font-family: 'Barlow Condensed', sans-serif;
-    padding: 100px 430px;
+    padding: 50px 10px;
 }
 .third .btn{
-    padding: 10px 90px;
+    padding: 10px 100px;
+}
+.third h2, .third p, .color{
+    color: aliceblue;
+    font-family: 'Barlow Condensed', sans-serif; 
+    padding-top: 10px; 
+}
+/* .cap{
+    padding-left: 200px;
+} */
+.v{
+    height: 550px;
 }
