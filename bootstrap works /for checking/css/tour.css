@@ -1,0 +1,87 @@
+img{
+    width: 100%;
+}
+.broo{
+    width: 225px;
+    height: 225px;
+    margin-top: -20px;
+}
+.bg{
+    background-image: url(../images/acc12.jpg);
+    height: 550px;
+}
+a{
+    color: black;
+    margin-left: 25px;
+    width: 100%;
+    text-decoration: none;
+}
+.bae{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.well{
+    color: orange;
+}
+.ho{
+    color: green;
+}
+.mar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bgo{
+    background-image: url(../images/acc21.jpg);
+    height: 350px;
+}
+.our{
+    height: 350px;
+}
+.face{
+    color: rgb(0, 0, 0);
+    padding: 50px 30px;
+}
+.face1{
+    padding-left: 30px;
+}
+.acco{
+    text-align: center;
+    padding-top: 20px;
+}
+.acco h1{
+    color: green;
+}
+.g img{
+    height: 250px;
+}
+.g{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.h{
+    text-align: center;
+    padding: 50px;
+}
+.l{
+    background-image: url(../images/acc41.jpg);
+    height: 350px;
+}
+.l h1,p{
+    padding: 20px;
+}
+.m{
+    padding: 40px;
+}
+.m a{
+    padding: 5px;
+}
+.now{
+  background-color: white; 
+  border: solid;
+  color: white;
+  padding: 15px 32px; 
+  color: green; 
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
