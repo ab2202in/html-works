@@ -51,7 +51,8 @@ img{ width: 100%;}
     padding: 50px 10px;
 }
 .third .btn{
-    padding: 10px 100px;
+    width: 100%;
+    padding: 10px 10px;
 }
 .third h2, .third p, .color{
     color: aliceblue;
@@ -73,7 +74,24 @@ img{ width: 100%;}
  hr{
     color: aliceblue;
  }
- .third .drinks{
-    padding: 10px 130px;
-    
- }
+@media (min-width: 100px) and (max-width: 567px) { 
+    .banner .t{font-size: 80px;}
+    .banner p{ font-size: small; padding-right: 10px;}
+    .banner {height: auto;}
+    .banner .btn{margin-bottom: 10px;}
+    .second .t{font-size: 40px; margin-bottom: 20px;}
+    .third{padding: 10px;}
+    .third .btn{margin-bottom: 10px; padding: 10px 80px;}
+}
+@media (min-width: 567px) and (max-width: 991.98px) {
+    .third{padding: 10px;}
+    .banner .btn{margin-bottom: 10px;}
+    .second img{padding-right: 50px;padding-left: 50px;}
+}
+@media (min-width: 768px) and (max-width: 1399.98px) {
+    .banner {height: auto;}
+    .banner .btn{margin-bottom: 10px;}
+}
+@media (min-width: 1199.98px) and (max-width: 2560px){
+    .third .v{margin-top: 30px;}
+}
