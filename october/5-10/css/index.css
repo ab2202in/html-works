@@ -1,0 +1,28 @@
+img{
+    width: 100%;
+}
+h5{font-size: large;}
+h6{font-size: small;}
+.bi{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px;
+}
+.bi:hover{
+    background-color: rgb(157, 231, 157) ;
+}
+.one{
+    padding-top: 50px;
+}
+.one h6{
+    padding-top: 10px;
+}
+.one h5{padding-top: 30px;}
+.second img{width: 300px; height: 300px;
+border-radius: 15%;}
+.imgg{
+    border-radius: 100%;
+}
