@@ -28,41 +28,66 @@ padding: 20px;} */
     height: 800px !important;
     width: 400px !important;
 } */
+.second{
+    padding-top: 100px;
+}
 .fruit{
     background-image: url(../images/1.webp);
     background-repeat: no-repeat;
     background-size: cover;
-     height: 200px;
+     height: 300px;
     width: 100%;
 }
 .veggies{
-    background-image: url(../images/3.png);
+    background-image: url(../images/3.webp);
     background-repeat: no-repeat;
     background-size: cover;
-     height: 200px;
+     height: 300px;
      width: 100%;
 }
 .juice{
     background-image: url(../images/2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 300px;
      width: 100%;
 }
 .dried{
     background-image: url(../images/4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 300px;
      width: 100%;
 }
-.pic{
+.vegen{
     background-image: url(../images/5.jpg);
     background-size: cover;
     width: 100%;
-    
 }
 .second h2{
     font-style: italic;
-    color: aliceblue;
+    color: rgb(67, 170, 67);
+}
+a{
+    background-color: rgb(67, 170, 67);
+    color: white;
+    text-decoration: none;
+    font-size:xx-large;
+}
+.btn{
+    background: #82ae46;
+    border: 1px solid #82ae46;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    background:none;
+}
+.third h5{
+    margin-top: 100px;
+    font-style: italic;
+    color:rgb(67, 170, 67) ;
+}
+ .third h5, .third p{
+    padding-top: 20px;
 }
