@@ -60,16 +60,16 @@ padding: 20px;} */
      width: 100%;
 }
 .vegen{
-    background-image: url(../images/5.jpg);
+    background-image: url(../images/category.jpg.webp);
     background-size: cover;
     width: 100%;
 }
 .second h2{
     font-style: italic;
-    color: rgb(67, 170, 67);
+    color:#82ae46;
 }
 a{
-    background-color: rgb(67, 170, 67);
+    background-color:#82ae46;
     color: white;
     text-decoration: none;
     font-size:xx-large;
@@ -91,3 +91,69 @@ a{
  .third h5, .third p{
     padding-top: 20px;
 }
+.four h5{
+    font-weight: 300;
+}
+.five{
+    background-image: url(../images/bg_3.jpg.webp);
+    background-size: cover;
+}
+.five h6{
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    padding-top: 100px;
+    color: #82ae46;
+}
+.five h2{
+    font-weight: 1000;
+    padding-top: 25px;
+}
+.five p{
+    font-weight: 200;
+    padding-top: 25px;
+    font-size: larger;
+}
+.five h3{
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    color: #82ae46;
+}
+.price{
+    color: #82ae46;
+    padding-left: 3px;
+}
+.no{
+    color: #b3b3b3;
+    text-decoration: line-through;
+}
+.five h3{
+    padding-top: 30px;
+}
+#countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  #countdown li span {
+    display: block;
+    font-size: 4.5rem;
+    color: #82ae46;
+  }
+  #countdown ul{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media all and (max-width: 768px) {
+   
+    #countdown li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    #countdown li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+  
