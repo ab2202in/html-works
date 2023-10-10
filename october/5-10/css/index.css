@@ -1,9 +1,29 @@
 img{
     width: 100%;
 }
+.contact{
+    background-color: #82ae46;
+    .text{
+        color: #fff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+    }
+}
+.bar a{
+    font-size: xx-large;
+    font-weight: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bar .b a{
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+}
+
+
 h5{font-size: large;}
 h6{font-size: small;}
-.bi{
+ .one .bi{
     background-color: aqua;
     width: 100px;
     height: 100px;
@@ -11,7 +31,7 @@ h6{font-size: small;}
     text-align: center;
     padding: 30px;
 }
-.bi:hover{
+.one .bi:hover{
     background-color: rgb(157, 231, 157) ;
 }
 .one{
@@ -46,7 +66,7 @@ padding: 20px;} */
      width: 100%;
 }
 .juice{
-    background-image: url(../images/2.jpg);
+    background-image: url(../images/2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -67,12 +87,14 @@ padding: 20px;} */
 .second h2{
     font-style: italic;
     color:#82ae46;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-a{
+.second a{
     background-color:#82ae46;
     color: white;
     text-decoration: none;
-    font-size:xx-large;
+    font-size:medium;
+    padding: 5px;
 }
 .btn{
     background: #82ae46;
@@ -98,7 +120,7 @@ a{
     background-image: url(../images/bg_3.jpg.webp);
     background-size: cover;
 }
-.five h6{
+.five h5{
     font-family: "Lora", Georgia, serif;
     font-style: italic;
     padding-top: 100px;
@@ -117,6 +139,7 @@ a{
     font-family: "Lora", Georgia, serif;
     font-style: italic;
     color: #82ae46;
+    padding-top: 30px;
 }
 .price{
     color: #82ae46;
@@ -125,9 +148,6 @@ a{
 .no{
     color: #b3b3b3;
     text-decoration: line-through;
-}
-.five h3{
-    padding-top: 30px;
 }
 #countdown li {
     display: inline-block;
@@ -146,6 +166,21 @@ a{
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  .six h5{
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    color: #82ae46;
+    padding-top: 50px;
+  }
+.six h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+
   @media all and (max-width: 768px) {
    
     #countdown li {
