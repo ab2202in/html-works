@@ -1,6 +1,7 @@
 img{
     width: 100%;
 }
+
 .contact{
     background-color: #82ae46;
     .text{
@@ -13,7 +14,28 @@ img{
 .navbar-brand{
     font-weight: bold;
     font-size: xx-large;
+    color: #82ae46;
 }
+.bbg{
+    background-image: url(../images/bg_1.jpg.webp);
+    background-size: cover;
+    height: 100%;
+    .bbb{
+        color: white ;
+        text-align: center;
+        font-family: 'Amatic SC', sans-serif;
+        padding: 100px;
+        font-size: 250px ;
+    }
+}
+.bbg{
+    .p{
+        color: #fff;
+       font-family: cursive;
+       font-size: 20px;
+    }
+}
+
 
 h5{font-size: large;}
 h6{font-size: small;}
@@ -173,7 +195,22 @@ padding: 20px;} */
     padding-bottom: 30px;
     padding-top: 20px;
 }
-
+.seven img{
+    width: 100px;
+    border-radius: 50%;
+}
+.seven p{
+    text-align: center;
+    padding:10px 50px;
+    font-weight: 300;
+}
+.seven figcaption{
+    font-weight: bolder;
+    font-size: larger;
+}
+.bor{
+    border-left: 5px solid chartreuse;
+} 
 
   @media all and (max-width: 768px) {
    
