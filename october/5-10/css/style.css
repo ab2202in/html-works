@@ -16,10 +16,10 @@ img{
     font-size: xx-large;
     color: #82ae46;
 }
-.bbg{
+/* .bbg{
     background-image: url(../images/bg_1.jpg.webp);
+    width: fit-content;
     background-size: cover;
-    height: 100%;
     .bbb{
         color: white ;
         text-align: center;
@@ -34,6 +34,16 @@ img{
        font-family: cursive;
        font-size: 20px;
     }
+} */
+
+.carousel-caption h1{
+        color: white ;
+        text-align: center;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 200px ;
+}
+.carousel-caption p{
+    font-family: monospace;
 }
 
 
@@ -211,6 +221,9 @@ padding: 20px;} */
 .bor{
     border-left: 5px solid chartreuse;
 } 
+
+
+
 
   @media all and (max-width: 768px) {
    
