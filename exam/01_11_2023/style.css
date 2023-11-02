@@ -24,12 +24,9 @@ img{
 }
 @media (min-width:567px) and (max-width:767px){
     .re .ve{
-        padding: 0px 200px;
+        padding: 50px 200px;
     }
-.imgi{
-    display: block;
-}
+
 }
 @media (min-width:300px) and (max-width:567px){
-
 }
