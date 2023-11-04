@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 70vw;
+    min-height: 70vh;
+    margin: auto;
+    border: 2px solid red;
+    background-color: cyan;
+    display: flex;
+    
+    /* flex-flow: flex-direction flex-wrap; */
+    flex-flow: row wrap;
+    
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 2px double blue;
+    background-color: antiquewhite;
+}
+
+
+#box1{
+    /* flex: flex-grow flex-shrink flex-basis; */
+    flex-grow: 3;
+    flex-shrink: 3;
+    order: 1;
+    flex-basis: 40px;
+}
+
+#box2{
+    flex: 2 2 50px;
+    order: 2;
+    
+}

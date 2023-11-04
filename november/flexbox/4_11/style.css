@@ -3,24 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container{
     max-width: 70vw;
     min-height: 70vh;
     margin: auto;
-    border: 2px solid red;
     background-color: cyan;
-    display: flex;
-    
-    /* flex-flow: flex-direction flex-wrap; */
-    flex-flow: row wrap;
+    display:grid;
+    grid-template-columns: auto auto auto; 
+    gap: 50px 100px;
     
 }
 
-.box{
-    width: 200px;
-    height: 200px;
+.grid-items{
     margin: 5px;
-    border: 2px double blue;
+    border: 2px solid red;
     background-color: antiquewhite;
+   
 }
