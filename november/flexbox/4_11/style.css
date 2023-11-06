@@ -7,16 +7,50 @@
     max-width: 70vw;
     min-height: 70vh;
     margin: auto;
+    /* justify-content: space-evenly; */
     background-color: cyan;
     display:grid;
     grid-template-columns: auto auto auto; 
-    gap: 50px 100px;
-    
+    /* gap: 50px 100px; */
+    grid-template-areas: 'myArea myArea . . .';
 }
 
 .grid-items{
-    margin: 5px;
+    /* margin: 5px; */
     border: 2px solid red;
     background-color: antiquewhite;
    
+}
+
+#one{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+#two{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+#seven{
+    grid-column: 1/ span 3;
+}
+
+#nine{
+    grid-column:2/ span 2;
+}
+#three{
+    grid-row: 2/ span 2;
+}
+
+#six{
+    grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+#eight{
+    grid-area: myArea;
+    grid-row-start: 6;
+    grid-row-end: 6;
 }
