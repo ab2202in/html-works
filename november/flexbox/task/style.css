@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    display:grid;
+    align-content: space-evenly;
+}
+
+.images{
+    grid-template-rows: 'images images images images';
+}
+.winter{
+    grid-area: images;
+}
+
+/* @media only screen and (max-width:767.98px){
+    .container{
+        grid-template-areas: 'Header Header Header Header Header Header' 'Menu Menu Menu Menu Menu Menu' 'Main Main Main Main Main Main' 'Right Right Right Right Right Right''Footer Footer Footer Footer Footer Footer';
+    }
+} */
