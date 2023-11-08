@@ -7,17 +7,28 @@
     margin: auto;
     display:grid;
     align-content: space-evenly;
+    
+}
+
+.video{
+    display: flex;
+    width:max-content ;
+    margin: auto;
+
 }
 
 .images{
-    grid-template-rows: 'images images images images';
+    /* grid-template-columns: 'images images images images'; */
+    grid-template-columns: auto;
+    margin: auto;
+    
 }
-.winter{
-    grid-area: images;
+img{
+    margin: auto;
+    padding-left: 75px;
 }
 
-/* @media only screen and (max-width:767.98px){
-    .container{
-        grid-template-areas: 'Header Header Header Header Header Header' 'Menu Menu Menu Menu Menu Menu' 'Main Main Main Main Main Main' 'Right Right Right Right Right Right''Footer Footer Footer Footer Footer Footer';
-    }
-} */
+
+@media only screen and (max-width:767.98px){
+    
+}
