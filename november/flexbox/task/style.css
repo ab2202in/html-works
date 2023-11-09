@@ -2,33 +2,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}    
 .container{
     margin: auto;
     display:grid;
     align-content: space-evenly;
+    grid-template-columns: auto;
     
+}
+.log{
+    width: 250px;
+}
+
+.logo{
+    background-color: aliceblue;
+    height: fit-content;
+    width: 1920px;
 }
 
 .video{
-    display: flex;
     width:max-content ;
+    height: fit-content;
     margin: auto;
-
 }
-
 .images{
-    /* grid-template-columns: 'images images images images'; */
-    grid-template-columns: auto;
-    margin: auto;
-    
+    grid-template-columns: auto auto auto auto;
+    width: 1920px;
 }
-img{
-    margin: auto;
-    padding-left: 75px;
-}
+
 
 
 @media only screen and (max-width:767.98px){
-    
+    .images{
+        flex: 1;
+    }
 }
