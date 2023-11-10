@@ -8,6 +8,7 @@
     display:grid;
     align-content: space-evenly;
     grid-template-columns: auto;
+    flex-flow: row wrap;
     
 }
 .log{
@@ -15,22 +16,19 @@
 }
 
 .logo{
-    background-color: aliceblue;
     height: fit-content;
     width: 1920px;
 }
 
 .video{
-    width:max-content ;
+    width: 1920px;
     height: fit-content;
     margin: auto;
 }
 .images{
-    grid-template-columns: auto auto auto auto;
-    width: 1920px;
+   margin: auto;
+ 
 }
-
-
 
 @media only screen and (max-width:767.98px){
     .images{
