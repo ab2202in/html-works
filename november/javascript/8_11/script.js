@@ -86,24 +86,109 @@
 // console.log("arr : ", arr);
 
 
-var obj = {
-    firstName : "Abin",
-    secondName : "Sasikumar",
-    age : 21,
-    Indian : true,
-    hobbies : ["sleeping","playing","working"],
-}
+// var obj = {
+//     firstName : "Abin",
+//     secondName : "Sasikumar",
+//     age : 21,
+//     Indian : true,
+//     hobbies : ["sleeping","playing","working"],
+// }
 
-console.log("first name : ", obj.firstName);
-console.log("second name : ", obj.secondName);
-console.log("age : ", obj.age);
-console.log("indian? : ", obj.Indian);
-console.log("hobbies : ", obj.hobbies);
+// console.log("first name : ", obj.firstName);
+// console.log("second name : ", obj.secondName);
+// console.log("age : ", obj.age);
+// console.log("indian? : ", obj.Indian);
+// console.log("hobbies : ", obj.hobbies);
 
-obj.mark1=50;
-obj.mark2=70;
-obj.mark3=75;
-obj.age=51;
+// obj.mark1=50;
+// obj.mark2=70;
+// obj.mark3=75;
+// obj.age=51;
 
-console.log("obj : ",obj);
+// console.log("obj : ",obj);
+
+// var a=12; //global scoped
+
+// {
+//     let b;
+//     b=11;
+//     const c=12;
+
+//     console.log("b : ",b);
+//     console.log("c : ",c);
+
+// }
+
+// let num1=10;
+// let num2=100;
+
+// if(num1 < num2)
+// {
+//     console.log(`Adithyan is gay`)
+// }else if(num1 == num2)
+// {
+//     console.log(`Adithyan is not gay`)
+// }
+// else if(num2 < num1)
+// {
+//     console.log(`is Adithyan gay?`)
+// }
+
+//switch statement
+// let day = 3;
+
+// switch (day) {
+//     case 1:
+//         console.log("Monday")
+//         break;
+//     case 2:
+//         console.log("Tuesday")
+//         break;
+//     case 3:
+//         console.log("Wednesday")
+//         break;
+//     case 4:
+//         console.log("Thursday")
+//         break;
+//     case 5:
+//         console.log("Friday")
+//         break;
+//     case 6:
+//         console.log("Saturday")
+//         break;
+//     case 7:
+//         console.log("Sunday")
+//         break;
+//     default:
+//         console.log("Funday")
+//         break;
+// }
+
+// // for loop
+// for (var i = 0; i < 10; i++) {
+//     console.log(i + 1);
+// }
+
+// // while loop
+// let a = 0;
+// while (a <= 10) {
+//     console.log("Hello from adithyan's while loop");
+//     a = a + 1;
+// }
+// do {
+//     console.log("Hello from adithyan's do loop");
+//     a = a + 1;
+// }
+// while (a <= 10);
+
+// // break and continue
+// for (let b = 0; b <= 10; b++) {
+//     if (b == 5) {
+//         continue;
+//     }
+//     if (b == 8) {
+//         break;
+//     }
+//     console.log(b);
+// }
 
