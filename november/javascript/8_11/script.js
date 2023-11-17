@@ -192,3 +192,67 @@
 //     console.log(b);
 // }
 
+// nested loop
+// {
+//     let string = '';
+// for (let i = 0; i <= 10; i++) {
+//     for (let j = 0; j < i; j++) {
+//         string = string + '*';
+//         console.log(string);
+//     }
+//     string = string + '\n'
+// }
+// }
+
+// function printHello(){
+//     console.log("hello");
+// }
+// printHello();
+
+// function sum(a,b){
+//     let sum;
+//     sum=a+b;
+//     console.log("Sum : ",sum );
+// }
+// sum(15,25);
+// sum(309,976);
+
+// function sumUptoTen() {
+//     let sum = 0;
+//     let i;
+//     for (i = 1; i <= 10; i++) {
+//         sum = sum + i;
+//     }
+//     console.log("sum of 10 numbers : ",sum);
+// }
+
+
+// sumUptoTen();
+
+// function eveNumber(){
+//     let i=0;
+//     while(i<=20){
+//         if(i%2 == 0){
+//             console.log("even numbers :", i);
+//         }
+//         i++;
+//     }
+   
+// }
+// eveNumber();
+
+// let  a=10;
+//  function update(a){
+//     a="new value";
+//     console.log("from function : ",a);
+//  }
+//  update(a);
+//  console.log("a : ",a);
+
+let arr=[10,20,30];
+function update(arr){
+arr[0]=100;
+console.log(" arr from function : ",arr);
+}
+update(arr);
+console.log("arr : ",arr);
