@@ -237,7 +237,7 @@
 //         }
 //         i++;
 //     }
-   
+
 // }
 // eveNumber();
 
@@ -249,10 +249,66 @@
 //  update(a);
 //  console.log("a : ",a);
 
-let arr=[10,20,30];
-function update(arr){
-arr[0]=100;
-console.log(" arr from function : ",arr);
-}
-update(arr);
-console.log("arr : ",arr);
+// let arr=[10,20,30];
+// function update(arr){
+// arr[0]=100;
+// console.log(" arr from function : ",arr);
+// }
+// update(arr);
+// console.log("arr : ",arr);
+
+// {
+//     function outerFunction() {
+//         const outervariable = 'from outer function';
+
+//         function innerFunction() {
+//             console.log("outerVariable : ", outervariable);
+//         }
+
+//         return innerFunction;
+//     }
+
+//     let result = outerFunction();
+//     console.log("result : ", result);
+//     result();
+// }
+
+let content = document.getElementsByClassName("content");
+content[0].textContent = "some content";
+content[1].textContent = "some another content";
+
+let text = document.getElementById("text");
+text.textContent = "some bullshit";
+
+let para = document.getElementsByTagName("p");
+para[0].textContent = "some paragraph shit";
+
+let listItem = document.querySelector(".container .container1 ul li");
+listItem.textContent = "list item 1"
+
+
+let parag = document.getElementsByTagName("p");
+parag[1].textContent = "this is a paragraph";
+
+let contents = document.getElementsByClassName("textContent");
+contents[0].textContent = "text content 1";
+
+let texts = document.getElementById("textContentId");
+texts.textContent = "text content 2";
+
+let listItems = document.querySelector(".container3 .container4 ul li a");
+listItems.textContent = "home"
+
+// annonymus function
+const printHelloWorld = function () {
+    console.log("hail haidra")
+};
+ printHelloWorld();
+
+//  arrow functions
+
+const printAvengers = () => {
+    console.log("Avengers Assemble")
+};
+printAvengers();
+
