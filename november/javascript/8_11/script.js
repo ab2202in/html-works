@@ -273,42 +273,71 @@
 //     result();
 // }
 
-let content = document.getElementsByClassName("content");
-content[0].textContent = "some content";
-content[1].textContent = "some another content";
+// let content = document.getElementsByClassName("content");
+// content[0].textContent = "some content";
+// content[1].textContent = "some another content";
 
-let text = document.getElementById("text");
-text.textContent = "some bullshit";
+// let text = document.getElementById("text");
+// text.textContent = "some bullshit";
 
-let para = document.getElementsByTagName("p");
-para[0].textContent = "some paragraph shit";
+// let para = document.getElementsByTagName("p");
+// para[0].textContent = "some paragraph shit";
 
-let listItem = document.querySelector(".container .container1 ul li");
-listItem.textContent = "list item 1"
+// let listItem = document.querySelector(".container .container1 ul li");
+// listItem.textContent = "list item 1"
 
 
-let parag = document.getElementsByTagName("p");
-parag[1].textContent = "this is a paragraph";
+// let parag = document.getElementsByTagName("p");
+// parag[1].textContent = "this is a paragraph";
 
-let contents = document.getElementsByClassName("textContent");
-contents[0].textContent = "text content 1";
+// let contents = document.getElementsByClassName("textContent");
+// contents[0].textContent = "text content 1";
 
-let texts = document.getElementById("textContentId");
-texts.textContent = "text content 2";
+// let texts = document.getElementById("textContentId");
+// texts.textContent = "text content 2";
 
-let listItems = document.querySelector(".container3 .container4 ul li a");
-listItems.textContent = "home"
+// let listItems = document.querySelector(".container3 .container4 ul li a");
+// listItems.textContent = "home"
 
-// annonymus function
-const printHelloWorld = function () {
-    console.log("hail haidra")
-};
- printHelloWorld();
+// // annonymus function
+// const printHelloWorld = function () {
+//     console.log("hail haidra")
+// };
+//  printHelloWorld();
 
-//  arrow functions
+// //  arrow functions
 
-const printAvengers = () => {
-    console.log("Avengers Assemble")
-};
-printAvengers();
+// const printAvengers = () => {
+//     console.log("Avengers Assemble")
+// };
+// printAvengers();
 
+// timer functions
+// setTimeout( function(){
+//     console.log("From space");
+//     alert("the aliens are coming!!!!! ")
+// },3000);
+
+// setInterval(function(){
+//     alert("suiiiiiiiiiiiiiiii")
+// },3000);
+
+function putZero(sec) {
+    return sec < 10 ? "0" + sec : sec;
+}
+
+function show() {
+    var time = document.getElementById('time');
+    var dt = new Date();
+    var hours = dt.getHours();
+    var ampm = hours > 12 ? "pm" : "am";
+
+
+    time.innerHTML = putZero(hours % 12) + ":" + putZero(dt.getMinutes()) + ":" + putZero(dt.getSeconds()) + ampm;
+
+    setTimeout(function () {
+        show();
+    }, 1000);
+}
+
+show();
