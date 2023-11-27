@@ -322,22 +322,129 @@
 //     alert("suiiiiiiiiiiiiiiii")
 // },3000);
 
-function putZero(sec) {
-    return sec < 10 ? "0" + sec : sec;
+// function putZero(sec) {
+//     return sec < 10 ? "0" + sec : sec;
+// }
+
+// function show() {
+//     var time = document.getElementById('time');
+//     var dt = new Date();
+//     var hours = dt.getHours();
+//     var ampm = hours > 12 ? "pm" : "am";
+
+
+//     time.innerHTML = putZero(hours % 12) + ":" + putZero(dt.getMinutes()) + ":" + putZero(dt.getSeconds()) + ampm;
+
+//     setTimeout(function () {
+//         show();
+//     }, 1000);
+// }
+
+// show();
+
+// //spread operator
+
+// {
+//     let arr = [1, 2, 3, 4, 5];
+//     console.log("arr : ", arr);
+
+//     let arr1 = [...arr, 6, 7, 8];
+//     console.log("arr1 : ", arr1);
+
+
+//     let obj = {
+//         firstName: "John",
+//         secondName: "Smith",
+//         age: 38,
+//     };
+//     console.log("obj : ", obj);
+
+//     let obj1 = { ...obj, spouse: "Jane", kids: 3, };
+//     console.log("obj1 : ", obj1);
+
+//     //destruturing
+
+//     const [a, b, c, d, e] = arr;
+//     console.log("a : ", a);
+//     console.log("b : ", b);
+
+
+//     const { firstName, secondName, age } = obj;
+//     console.log("firstName : ", firstName);
+//     console.log("secondName : ", secondName);
+//     console.log("age : ", age);
+
+// }
+
+// {
+
+//     const matrix = [
+//         [1, 2, 3],
+//         [4, 5, 6],
+//         [7, 8, 9]
+//     ];
+
+//     const [row1, row2, row3] = matrix;
+//     const [a, b, c] = row1;
+//     const [d, e, f] = row2;
+//     const [g, h, i] = row3;
+
+//     console.log("a : ", a);
+//     console.log("b : ", b);
+//     console.log("c : ", c);
+
+//     console.log("d : ", d);
+//     console.log("e : ", e);
+//     console.log("f : ", f);
+
+//     console.log("g : ", g);
+//     console.log("h : ", h);
+//     console.log("i : ", i);
+
+
+//     const person ={
+//         firstName: "John",
+//         secondName: "Smith",
+//         age: 38,
+//         address :{
+//             zipcode : '1001',
+//             city : "New York",
+//         }
+//     }
+
+//     const {firstName,secondName,age,address : {zipcode,city}}= person;
+//     console.log("name : ",firstName + ' ' + secondName);
+//     console.log("age : ",age);
+//     console.log("city : ",city);
+//     console.log("zipcode : ",zipcode);
+
+// }
+
+//multiplication table
+// {
+//     for (let i=1; i<=10; i++)
+//     {
+//         for (let j=1; j<=10; j++)
+//         {
+//             console.log(`${i}*${j}=${i*j}\n`);
+//         }
+//     }
+// }
+
+
+// sum of even and odd
+{
+    let evenSum =0;
+    let oddSum=0;
+    for (let i =1; i<=50;i++){
+        if(i%2==0){
+            console.log("Even : ",i);
+            evenSum=evenSum+i;
+        }else{
+            console.log("Odd  : ",i);
+            oddSum=oddSum+i;
+        }
+    }
+    console.log("odd sum  : ",oddSum);
+    console.log("even sum : ",evenSum);
 }
-
-function show() {
-    var time = document.getElementById('time');
-    var dt = new Date();
-    var hours = dt.getHours();
-    var ampm = hours > 12 ? "pm" : "am";
-
-
-    time.innerHTML = putZero(hours % 12) + ":" + putZero(dt.getMinutes()) + ":" + putZero(dt.getSeconds()) + ampm;
-
-    setTimeout(function () {
-        show();
-    }, 1000);
-}
-
-show();
