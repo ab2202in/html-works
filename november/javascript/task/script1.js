@@ -10,6 +10,7 @@ function addItems() {
     list.append(Object.assign(document.createElement('li'), { textContent: tasks }));
 };
 
+// 3
 function submit() {
   let name = document.getElementById('name').value;
   let email = document.getElementById('email').value;
@@ -22,7 +23,7 @@ function submit() {
 
 }
 
-// 3
+// 4
 var imageArray=["1.avif","2.avif","3.avif"];
 var imageIndex=0;
 const prevbtn = document.getElementById('prev');
@@ -38,4 +39,4 @@ function nextImage(){
   myImage.setAttribute("src",imageArray[imageIndex]);
 }
 
-//4
+// 5
