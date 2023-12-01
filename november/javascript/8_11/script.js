@@ -322,25 +322,25 @@
 //     alert("suiiiiiiiiiiiiiiii")
 // },3000);
 
-// function putZero(sec) {
-//     return sec < 10 ? "0" + sec : sec;
-// }
+function putZero(sec) {
+    return sec < 10 ? "0" + sec : sec;
+}
 
-// function show() {
-//     var time = document.getElementById('time');
-//     var dt = new Date();
-//     var hours = dt.getHours();
-//     var ampm = hours > 12 ? "pm" : "am";
+function show() {
+    var time = document.getElementById('time');
+    var dt = new Date();
+    var hours = dt.getHours();
+    var ampm = hours > 12 ? "pm" : "am";
 
 
-//     time.innerHTML = putZero(hours % 12) + ":" + putZero(dt.getMinutes()) + ":" + putZero(dt.getSeconds()) + ampm;
+    time.innerHTML = putZero(hours % 12) + ":" + putZero(dt.getMinutes()) + ":" + putZero(dt.getSeconds()) + ampm;
 
-//     setTimeout(function () {
-//         show();
-//     }, 1000);
-// }
+    setTimeout(function () {
+        show();
+    }, 1000);
+}
 
-// show();
+show();
 
 // //spread operator
 
@@ -433,89 +433,166 @@
 
 
 // sum of even and odd
+// {
+//     let evenSum = 0;
+//     let oddSum = 0;
+//     for (let i = 1; i <= 50; i++) {
+//         if (i % 2 == 0) {
+//             console.log("Even : ", i);
+//             evenSum = evenSum + i;
+//         } else {
+//             console.log("Odd  : ", i);
+//             oddSum = oddSum + i;
+//         }
+//     }
+//     console.log("odd sum  : ", oddSum);
+//     console.log("even sum : ", evenSum);
+// }
+
+
+
+
+// {
+//     let arr = [10, 20, 5, 40, 50];
+//     console.log("array :",arr);
+
+//     function arrSum(arr) {
+//         let sum = 0;
+
+//         for (let i = 0; i < arr.length; i++) {
+//             sum = sum + arr[i];
+//         }
+
+//         // console.log("sum :", sum);
+//         return sum;
+//     }
+
+//     console.log("array sum: ", arrSum(arr));
+
+//     let average = arrSum(arr)/arr.length;
+//     console.log("array average : ",average);
+// }
+
+
+// {
+
+//     let arr=[10,-10,9,8,7,6];
+//     console.log("array : ",arr);
+
+//     function checkforNeg(arr){
+//         var newArr=[arr];
+//         for (let i=0;i<arr.length;i++){
+//             if(arr[i]<0){
+//                 arr[i]= arr[i]*-1;
+//             }
+//         }
+//         return newArr;
+//       }
+//     console.log("new array : ",checkforNeg(arr));
+// }
+
+// {
+//    function countdown(n){
+//     if (n<=0){
+//         console.log("adithyan is gay friend!")
+//     }else{
+//         console.log(n);
+//         countdown(n-1);
+//     }
+// }
+
+// countdown (10); 
+// }
+
+
+// console.log("factorial ussing recursive function: ");
+
+// function fact(n){
+//     if (n==0 || n==1){
+//         return 1;
+//     }else{
+//         return n* fact(n-1);
+//     }
+// }
+//     let factorial= fact(6);
+//     console.log("factorial :" ,factorial)
+
+
+
 {
-    let evenSum = 0;
-    let oddSum = 0;
-    for (let i = 1; i <= 50; i++) {
-        if (i % 2 == 0) {
-            console.log("Even : ", i);
-            evenSum = evenSum + i;
-        } else {
-            console.log("Odd  : ", i);
-            oddSum = oddSum + i;
-        }
-    }
-    console.log("odd sum  : ", oddSum);
-    console.log("even sum : ", evenSum);
+    let arr =
+        [
+            {
+                name: "aadhi",
+                place: "kunnukara",
+                occupation: "don",
+                mark: 60
+            },
+            {
+                name: "abin",
+                place: "asamannoor",
+                occupation: "rich",
+                mark: 60
+            },
+            {
+                name: "aaarthi",
+                place: "shappumpady",
+                occupation: "foodie",
+                mark: 60
+            },
+            {
+                name: "anwarsha",
+                place: "erattupetta",
+                occupation: "don",
+                mark: 60
+            },
+
+        ]
+    console.log("foreach ->");
+    const z = arr.forEach((item, index) => {
+        console.log(`item-${index} : `, item)
+    });
+    console.log(" z: ", z);
+
+
+    console.log("find->");
+    const x = arr.find((item) => {
+        return item.name == "aadhi"
+    });
+    console.log("x : ", x);
+
+    console.log("filter->");
+    const y = arr.filter((item) => {
+        return item.occupation == "don";
+    });
+    console.log("y : ", y);
+
+    console.log("map->");
+    const arr1 = arr.map((item) => {
+        return item.name;
+    });
+    console.log("arr1 : ", arr1);
+
+
+    console.log("reduce->");
+    const value = arr.reduce((total, item) => {
+        console.log("total : ", total);
+        console.log("item : ", item);
+        return total + item.mark;
+    }, 0);
+    console.log("value : ", value);
+
 }
 
-
-
-
-{
-    let arr = [10, 20, 5, 40, 50];
-    console.log("array :",arr);
-
-    function arrSum(arr) {
-        let sum = 0;
-
-        for (let i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
-        }
-
-        // console.log("sum :", sum);
-        return sum;
-    }
-
-    console.log("array sum: ", arrSum(arr));
-
-    let average = arrSum(arr)/arr.length;
-    console.log("array average : ",average);
-}
-
-
 {
 
-    let arr=[10,-10,9,8,7,6];
+    let arr =[1,2,3,4,5,6,7,8,9];
     console.log("array : ",arr);
-
-    function checkforNeg(arr){
-        var newArr=[arr];
-        for (let i=0;i<arr.length;i++){
-            if(arr[i]<0){
-                arr[i]= arr[i]*-1;
-            }
-        }
-        return newArr;
-      }
-    console.log("new array : ",checkforNeg(arr));
-}
-
-{
-   function countdown(n){
-    if (n<=0){
-        console.log("adithyan is gay friend!")
-    }else{
-        console.log(n);
-        countdown(n-1);
-    }
-}
-
-countdown (10); 
-}
-
-
-console.log("factorial ussing recursive function: ");
-
-function fact(n){
-    if (n==0 || n==1){
-        return 1;
-    }else{
-        return n* fact(n-1);
-    }
-}
-    let factorial= fact(6);
-    console.log("factorial :" ,factorial)
-
-    
-    
+    const arr1 = arr.forEach((square,index,sum=0) => {
+        square=square*square;
+       console.log(`square of ${arr[index]}: `,square);
+       
+//        sum=+square[index];
+//    console.log("sum of squares :",sum);
+    });
+   }
