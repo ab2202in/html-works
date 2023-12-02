@@ -584,15 +584,3 @@ show();
 
 }
 
-{
-
-    let arr =[1,2,3,4,5,6,7,8,9];
-    console.log("array : ",arr);
-    const arr1 = arr.forEach((square,index,sum=0) => {
-        square=square*square;
-       console.log(`square of ${arr[index]}: `,square);
-       
-//        sum=+square[index];
-//    console.log("sum of squares :",sum);
-    });
-   }
