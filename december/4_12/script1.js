@@ -154,3 +154,4 @@
     car6.getInfo();
     const car7 = new Cars("Ford", "Mustang", "SUV", "80lac");
     car7.getInfo();  
+
