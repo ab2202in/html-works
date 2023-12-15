@@ -76,10 +76,80 @@ body {
   font-family: 'Kalnia', serif;
 }
 
+.deals{
+  font-size: xx-large;
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+ 
+}
+.beck{
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D0D0D;
+  margin: 10%;
+}
 
+.text-effects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* height: 200vh; */
+}
 
+.text {
+  font-size: 100px;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: black;
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
 
+  /* border-bottom: 1px solid #2F2B28; */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e7c115;
+  color: #ffffff;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.beck{
+  display: flex;
+}
 
 
 

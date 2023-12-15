@@ -71,3 +71,61 @@ console.log("result 15 :",resultexp15);
 const regexp16 = /mea.*$/im; //any value can occur and multiple characters too
 const resultexp16 = regexp16.test(str3);
 console.log("result 16 :",resultexp16);
+
+{
+const u_name = /^[a-z][a-z0-9_]*$/i;
+
+function check(value){
+    const result = u_name.test(value);
+
+    if(result){
+        return 'VALID';
+    }else{
+        return 'INVALID';
+    }
+}
+
+const value ="a_000hxx";
+
+ let validation = check(value);
+ console.log("result :",validation);
+
+// let value = document.getElementsByClassName('uname').value;
+// error.innerHTML =uog;
+
+// function onChange(arg){
+//     let validation_result = check(value);
+// }
+}
+
+let str5 = "a-b-c-d";
+
+let replace1 =str5.replace(/-/,':');
+console.log("replaced : ",replace1);
+
+let replace2 =str5.replace(/-/g,':');
+console.log("replaced : ",replace2);
+
+let str6 ="22-02-02";
+
+let replace3 =str6.replace(/(\d{2})$/,'20$1');
+console.log("replaced : ",replace3);
+
+// {
+
+//     let value = document.getElementsByClassName('email_input').value;
+//     const check_email = /^[a-z][a-z0-9_]*$@gmail.com$/i;
+
+//     function email(value){
+//         const emails = check_email.test(value);
+
+//         if (emails){
+//             document.write
+//         }else{
+         
+//         }
+//     }
+
+    
+
+// }
