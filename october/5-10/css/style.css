@@ -173,9 +173,9 @@ padding: 20px;} */
     color: #82ae46;
     padding-left: 3px;
 }
-.no{
-    color: #b3b3b3;
-    text-decoration: line-through;
+.price{
+  color: #82ae46;
+  padding-left: 3px;
 }
 #countdown li {
     display: inline-block;

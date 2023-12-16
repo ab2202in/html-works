@@ -129,3 +129,70 @@ console.log("replaced : ",replace3);
     
 
 // }
+
+const regexp17 =/[kjm]/i; // any one of the k or j or m should present
+const result17 = regexp17.test(str1);
+console.log("result 17 : ",result17 );
+
+
+const regexp18 =/[^kjm]/i; //none of the k or j or m is present
+const result18 = regexp18.test(str1);
+console.log("result 18 : ",result18 );
+
+
+const regexp19 =/[H+]/i; //atleat there should be an H
+const result19 = regexp19.test(str1);
+console.log("result 19 : ",result19 );
+
+const regexp20 =/[O$]/i; // ends with O
+const result20 = regexp20.test(str1);
+console.log("result 20 : ",result20 );
+
+
+
+const regexp21 =/O?$/i; // ends with O is optional
+const result21 = regexp21.test(str1);
+console.log("result 21 : ",result21 );
+
+const regexp22 =/O+$/i; // atleast an O is required
+const result22 = regexp22.test(str1);
+console.log("result 22 : ",result22 );
+
+
+const regexp23 =/L{2}o$/i; // o shold be exactly between 2 L's
+const result23 = regexp23.test(str1);
+console.log("result 23 : ",result23 );
+
+
+const regexp24 =/L{2,4}o$/i; // o shold be exactly between 2 to 4 L's
+const result24 = regexp24.test(str1);
+console.log("result 24 : ",result24 );
+
+
+const regexp25 =/HeL{2,4}o$/i; // o shold be exactly between 2 to 4 L's and o is required
+const result25 = regexp25.test(str1);
+console.log("result 25 : ",result25 );
+
+const regexp26 =/HeL{2,}o$/i; // 2 or more L's
+const result26 = regexp26.test(str1);
+console.log("result 26 : ",result26 );
+
+const regexp27 =/\d/i; // digits
+const result27 = regexp27.test(str1);
+console.log("result 27 : ",result27 );
+
+
+const regexp28 =/\D/i; // non-digits 
+const result28 = regexp28.test(str1);
+console.log("result 28 : ",result28 );
+
+const regexp29 =/./i; // if there is a .
+const result29 = regexp29.test(str1);
+console.log("result 29 : ",result29 );
+
+const regexp30 =/\./i; // if there a . anywhere on the string
+const result30 = regexp30.test(str1);
+console.log("result 30 : ",result30 );
+
+
+//backslash is used to escape from special characters '\'

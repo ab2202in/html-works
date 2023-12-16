@@ -82,11 +82,7 @@ body {
   display: flex;
  
 }
-.beck{
-  display: flex;
-  width: 500px;
-  height: 500px;
-}
+
 
 body {
   margin: 0;
@@ -132,7 +128,7 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #e7c115;
+  background-color: #ff3d54;
   color: #ffffff;
   
   clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
@@ -147,22 +143,84 @@ span {
 .text:hover > span {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-.beck{
-  display: flex;
+
+.body {
+  padding: 3em 2em;
+  font: normal 40px/50px Arial, sans-serif;
+  background: #ff3d54;
+  color: #000;
+}
+p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+  margin-top: 0px
+}
+b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+}
+span1 {
+ display: inline-block;
+color: #fff;
+position: relative;
+white-space: nowrap;
+top: 0;
+left: 0;
+-webkit-animation: move 5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 1s;
+}
+
+
+.see .bi{
+  background-color: #ff3d54;  font-size: 15px; color: #f7f6f2; border-radius: 100%;
+  padding: 10px;
+}
+.price{
+  color: #82ae46;
+  padding-left: 3px;
+}
+.price{
+  color: #82ae46;
+  padding-left: 3px;
+}
+.abs{background-color: #82ae46;color: #fff;}
+.border{position: relative;}
+.abs{position: absolute;}
+.see{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+}
+.pro:hover  .saw{
+  opacity: 0;
+}
+.pro:hover .see{
+  opacity: 1;
+  bottom: 35px;
+  left: 0px;
+  right: 0px;
+}
+.pro img{
+  width: 150px;
+  height: 150px;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
+@keyframes move {
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
 
 
 @media (max-width: 400px) {
