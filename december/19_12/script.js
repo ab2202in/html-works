@@ -29,79 +29,117 @@
 }
 
 {
-    function findUser(userid){
-        let userInfo =[{
-            id   : 1,
-            name : 'John',
-            age  : 30,
+    function findUser(userid) {
+        let userInfo = [{
+            id: 1,
+            name: 'John',
+            age: 30,
         },
         {
-            id   : 2,
-            name : 'Jane',
-            age  : 25,
+            id: 2,
+            name: 'Jane',
+            age: 25,
         },
         {
-            id   : 3,
-            name : 'Jonathan',
-            age  : 28,
+            id: 3,
+            name: 'Jonathan',
+            age: 28,
         }];
-        let user =userInfo.find((element)=> element.id ==userid);
+        let user = userInfo.find((element) => element.id == userid);
         return user;
-        
+
     }
-}
-let user =findUser(2);
-console.log("user : ",user);
+
+    let user = findUser(2);
+    console.log("user : ", user);
 
 
 
-function findUser1(userid){
-     
-    let userInfo =[{
-        id   : 1,
-        name : 'John',
-        age  : 30,
-    },
-    {
-        id   : 2,
-        name : 'Jane',
-        age  : 25,
-    },
-    {
-        id   : 3,
-        name : 'Jonathan',
-        age  : 28,
-    }];
+    function findUser1(userid) {
 
-    setTimeout (()=>{
-        let user = userInfo.find(()=>userInfo.id===userid);
-        return user1;
-    },500);
-}
+        let userInfo = [{
+            id: 1,
+            name: 'John',
+            age: 30,
+        },
+        {
+            id: 2,
+            name: 'Jane',
+            age: 25,
+        },
+        {
+            id: 3,
+            name: 'Jonathan',
+            age: 28,
+        }];
 
-let user1 =findUser1(2);
-console.log("user1 : ",user1);
+        setTimeout(() => {
+            let user = userInfo.find(() => userInfo.id === userid);
+            return user1;
+        }, 500);
+    }
+
+    let user1 = findUser1(2);
+    console.log("user1 : ", user1);
 
 
-//using promises
-function findUser2(userid){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            let userInfo =[{
-                id   : 1,
-                name : 'John',
-                age  : 30,
-            },
-            {
-                id   : 2,
-                name : 'Jane',
-                age  : 25,
-            },
-            {
-                id   : 3,
-                name : 'Jonathan',
-                age  : 28,
-            }];
-        })
-    })
+    //using promises
+    function findUser2(userid) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let userInfo = [{
+                    id: 1,
+                    name: 'John',
+                    age: 30,
+                },
+                {
+                    id: 2,
+                    name: 'Jane',
+                    age: 25,
+                },
+                {
+                    id: 3,
+                    name: 'Jonathan',
+                    age: 28,
+                }];
+
+                let user = userInfo.find((element) => element.id === userid);
+
+                if (user) {
+                    resolve(user);
+                } else {
+                    reject("user not found");
+                }
+            }, 3000);
+        });
+    }
+
+
+    // using then and catch
+    // findUser2(3)
+    //     .then((user) => {
+    //         console.log("\n\n");
+    //         console.log("user :", user);
+    //         console.log(user.name);
+
+    //     })
+    //     .catch((error) => {
+    //         console.log("\n\n");
+    //         console.log("error : ", error);
+
+    //     });
+
+    //using async and await
+    async function getData() {
+        try {
+            let userData = await findUser2(9);
+            console.log("user data : ", userData);
+        } catch (error) {
+            console.log("error : ", error);
+
+        }
+
+    }
+
+    getData();
 }
