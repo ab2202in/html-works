@@ -1,0 +1,108 @@
+mongo             - open a connection to the local mongodb instance
+show dbs          - show all databases
+use db_name       - create and switch to the database
+db                - prints current database
+db.dropDatabase() - delete the current database
+
+show collections             - show all collections in database
+db.createCollection("users") - create a collection with name users
+
+CRUD - Create Read update Delete
+
+
+CREATE
+--------------------------------------------------------------------------------
+
+db.users.insertOne({name : "Rahul"}) //creates a new document inside the 'users' collection
+
+db.users.insertMany({name : "Rahul"},{name : "Kyle"}) // creates multiple new documents inside the 'users' collection
+
+{
+    name : "abc",
+    age  : "18",
+}
+
+db.user.insertOne({ firstName : "John",
+    lastName : "King",
+    email : "john.king@abc.com,
+    salary : "33000",
+    DoB :new Date('Mar 24, 2011'),
+    skills : ["Angular","React","MongoDB"],
+    address : {
+            street :"Upper street",
+            house :"no 1",
+            city: "New York",
+            country : "USA"
+    }});
+
+
+Read
+--------------------------------------------------------------------------------
+
+db.users.find() // get all documents from user's collection
+
+db.users.find(<filter object>) // get all documents that matches the filter object
+db.users.find({age : 35})
+
+db.users.find(<filter object>,<select object>) // find all the objects that matches the filter object but returns only the fields that are specified in the object
+db.users.find({age : 35}, {name : 1,_id :0})
+
+db.users.findOne({name : "Rahul"}) // only returns the first document that matches the filter object
+
+db.users.countDocuments(<filter object>) //returns documents that matches the filter object, if filter object empty returns all documents count
+db.users.countDocuments({})
+
+
+UPDATE
+--------------------------------------------------------------------------------
+
+db.users.updateOne({name : "Rahul"}, {$set : {name : "Rahul1"}}) //replaces Rahul with Rahul1, considering only the first match
+
+db.users.updateMany({name : "Rahul1"}, {$set : {name : "Rahul2"}}) //replaces Rahul with Rahul1, considers all the matches
+
+db.users.updateMany({age : 35}, {$inc : {age : 5}}) // increments all age 35 values to 40
+
+db.users.replaceOne({name : "Rahul2"},{name : "Rahul3"}) //replaces the first match, replaces the complete document instead of replacing the field
+
+
+DELETE 
+--------------------------------------------------------------------------------
+
+db.users.deleteOne({name : "Rahul3"}) //deletes first document that matches the filter object
+
+db.users.deleteMany({age : 75}) //deletes all the documents matching the filter object
+
+
+ADDITIONAL FILTER OBJECTS
+--------------------------------------------------------------------------------
+
+db.users.find({name : {$eq : "Jhon"}}) // get all the users with name Jhon
+
+db.users.find({name : {$ne : "Jhon"}}) // get all the users  whose names are not Jhon
+
+db.users.find({age : {$gt : 12}}) // get all the users whose age is greater than 12
+
+db.users.find({age : {$gte : 12}}) // get all the users whose age is greater than or equal to 12
+
+db.users.find({age : {$lt : 10}}) // get all the users whose age is less than 10
+
+db.users.find({age : {$lte : 10}}) //get all the users whose age is less than or equal to 10
+
+db.users.find({name : {$in : ["Riya","Jhon"]}}) // get all the users with name "Riya" and "Jhon"
+
+db.users.find({name : {$nin : ["Riya","Jhon"]}}) // get all the users that does not have the name "Riya" and "Jhon"
+
+db.users.find({$and : [{name : "Riya"},{age : 10}]}) // get all the users with name "Riya" and age 10
+
+db.users.find({$or : [{name : "Riya"},{age : 10}]}) // get all the users with name "Riya" or age 10
+
+db.users.find({name{$not : {$eq : "Riya"}}}) // get all the users with name other than "Riya"
+
+db.users.find({age : {$exist : true}}) // get all the users having age field
+
+db.users.find({$expr : {$gt : ["age","min_age"]}}) //get all the users having  their  age greater than min_age
+
+
+
+
+
