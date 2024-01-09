@@ -1,0 +1,26 @@
+html {
+    font-size: 18px;
+  }
+
+    #container {
+    padding: 30px;
+    max-width: 620px;
+    margin: 3rem auto 1rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0,0.2) 0px 0px 8px 0px;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px 0px;
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px 0px;
+  }
+  
+  #author {
+    margin: 1rem 0;
+    font-style: italic;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 3px;
+  }
+  
+  
