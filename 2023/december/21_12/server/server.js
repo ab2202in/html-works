@@ -4,11 +4,11 @@ const port = 3000;
 const url = require('url');
 const fs = require('fs');
 const querystring = require('querystring');
-const {MongoClient} = require('mongodb')
-const {error} = require ('console');
+const { MongoClient, ObjectId } = require('mongodb')
+const { error } = require('console');
 
 
-const client =new MongoClient('mongodb://127.0.0.1:27017');
+const client = new MongoClient('mongodb://127.0.0.1:27017');
 
 
 const server = http.createServer(async (req, res) => {
@@ -29,16 +29,16 @@ const server = http.createServer(async (req, res) => {
   if (parsedUrl.pathname === '/') {
     res.writeHead(200, ('Content-Type', 'text/html'));
     res.end(fs.readFileSync('../client/index.html'));
-  }else if (parsedUrl.pathname === '/add_user.html') {
+  } else if (parsedUrl.pathname === '/add_user.html') {
     res.writeHead(200, ('Content-Type', 'text/html'));
     res.end(fs.readFileSync('../client/add_user.html'));
-  }else if (parsedUrl.pathname === '/get_user.html') {
+  } else if (parsedUrl.pathname === '/get_user.html') {
     res.writeHead(200, ('Content-Type', 'text/html'));
     res.end(fs.readFileSync('../client/get_user.html'));
-  }else if (parsedUrl.pathname === '/style.css') {
+  } else if (parsedUrl.pathname === '/style.css') {
     res.writeHead(200, ('Content-Type', 'text/css'));
     res.end(fs.readFileSync('../client/style.css'));
-  }else if (parsedUrl.pathname === '/script.js') {
+  } else if (parsedUrl.pathname === '/script.js') {
     res.writeHead(200, ('Content-Type', 'text/javascript'));
     res.end(fs.readFileSync('../client/script.js'));
   }
@@ -57,7 +57,7 @@ const server = http.createServer(async (req, res) => {
     });
 
     //processs the form data on the end
-    req.on('end', async() => {
+    req.on('end', async () => {
       console.log("body : ", body);
       const formData = querystring.parse(body);
       console.log("formData : ", formData);
@@ -67,23 +67,23 @@ const server = http.createServer(async (req, res) => {
         name : ${formData.fname},
         lname : ${formData.lname},
         uname : ${formData.uname},
-        email : ${formData.eMail},
-        pword : ${formData.pWord},
+        email : ${formData.email},
+        pword : ${formData.pword},
         age : ${formData.age},
         address : ${formData.place},
-        phone : ${formData.phn}
+        phone : ${formData.phone}
       `);
 
       //save to database
       //insert data into collection
       await collection.insertOne(formData)
-      .then((message)=>{
-        console.log("document insertion successful");
-      })
-      .catch((error)=>{
-        console.log("database insertion error : ",error.message?error.message:error);
-      })
-     
+        .then((message) => {
+          console.log("document insertion successful");
+        })
+        .catch((error) => {
+          console.log("database insertion error : ", error.message ? error.message : error);
+        })
+
     });
 
     //send a response messsage
@@ -93,16 +93,95 @@ const server = http.createServer(async (req, res) => {
 
   if (req.method === 'GET' && parsedUrl.pathname === '/getData') {
     const formData = collection.find();
-    console.log("formData : ",formData);
+    console.log("formData : ", formData);
 
     const formDataArr = await formData.toArray();
-    console.log("formDataArr : ",formDataArr);
+    console.log("formDataArr : ", formDataArr);
 
-    let jsonFormData=JSON.stringify(formDataArr);
-    console.log("jsonFormData : ",jsonFormData);
+    let jsonFormData = JSON.stringify(formDataArr);
+    console.log("jsonFormData : ", jsonFormData);
 
     res.writeHead(200, { 'Content-Type': 'text/json' });
     res.end(jsonFormData);
+  }
+
+  if (req.method === 'PUT' && parsedUrl.pathname === '/editData') {
+    let body = "";
+    req.on('data', (chunks) => {
+      body = body + chunks.toString();
+    });
+
+    req.on('end', async () => {
+      let data = JSON.parse(body);
+      console.log("data : ",data);
+
+      let finalData = {
+        fname: data.fname,
+        lname: data.lname,
+        uname: data.uname,
+        email: data.email,
+        pword: data.pword,
+        age: data.age,
+        place: data.place,
+        phone: data.phone,
+      }
+      console.log("data : ",data);
+
+      let id = data.id;
+
+      let _id = new ObjectId(id);
+
+      await collection.updateOne({ _id }, { $set: finalData })
+        .then((message) => {
+          res.writeHead(200, { "Content-Type": "text/plain" });
+          res.end("success");
+        })
+        .catch((error) => {
+          res.writeHead(400, { "Content-Type": "text/plain" });
+          res.end("failed");
+        })
+    })
+
+  }
+
+  if (req.method === 'DELETE' && parsedUrl.pathname === '/deleteData'){
+    
+    let body = "";
+    req.on('data', (chunks) => {
+      body = body + chunks.toString();
+    });
+
+    req.on('end', async () => {
+      let data = JSON.parse(body);
+      console.log("data : ",data);
+
+      let finalData = {
+        fname: data.fname,
+        lname: data.lname,
+        uname: data.uname,
+        email: data.email,
+        pword: data.pword,
+        age: data.age,
+        place: data.place,
+        phone: data.phone,
+      }
+      console.log("data : ",data);
+
+      let id = data.id;
+
+      let _id = new ObjectId(id);
+
+      await collection.deleteOne({ _id }, { $set: finalData })
+        .then((message) => {
+          res.writeHead(200, { "Content-Type": "text/plain" });
+          res.end("success");
+        })
+        .catch((error) => {
+          res.writeHead(400, { "Content-Type": "text/plain" });
+          res.end("failed");
+        })
+    })
+
   }
 
 });
@@ -110,20 +189,20 @@ const server = http.createServer(async (req, res) => {
 // let f_name =/[a-z]/;
 // const name = fname.match(f_name);
 
-async function connect(){
-  await client.connect() 
-  .then((message)=>{
-    console.log("database connection established");
-  })
-  .catch((error)=>{
-    console.log("database is not connected");
-    console.log("database error : ", error.message?error.message:error);
-  })
-  .finally(()=>{
-    server.listen(port, () => {
-      console.log(`server running at http://localhost:3000`);
+async function connect() {
+  await client.connect()
+    .then((message) => {
+      console.log("database connection established");
     })
-  });
+    .catch((error) => {
+      console.log("database is not connected");
+      console.log("database error : ", error.message ? error.message : error);
+    })
+    .finally(() => {
+      server.listen(port, () => {
+        console.log(`server running at http://localhost:3000`);
+      })
+    });
 }
- 
+
 connect();

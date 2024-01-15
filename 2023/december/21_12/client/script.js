@@ -18,12 +18,14 @@ async function getData(){
         <td><input type="text" name ="fname" id="fname-${parsedData[i]._id}" value="${parsedData[i].fname}" disabled = true></td>
         <td><input type="text" name ="lname" id="lname-${parsedData[i]._id}" value ="${parsedData[i].lname}" disabled =true></td>
         <td><input type="username" name ="uname" id="uname-${parsedData[i]._id}" value = "${parsedData[i].uname}" disabled = true></td>
-        <td><input type="email" name ="eMail" id="email-${parsedData[i]._id}" value = "${parsedData[i].eMail}" disabled = true></td>
-        <td><input type="password" name ="pWord" id="pword-${parsedData[i]._id}" value = "${parsedData[i].pWord}" disabled = true></td>
+        <td><input type="email" name ="eMail" id="email-${parsedData[i]._id}" value = "${parsedData[i].email}" disabled = true></td>
+        <td><input type="password" name ="pWord" id="pword-${parsedData[i]._id}" value = "${parsedData[i].pword}" disabled = true></td>
         <td><input type="number" name ="age" id="age-${parsedData[i]._id}" value = "${parsedData[i].age}" disabled = true></td>
         <td><input type="text" name ="place" id="place-${parsedData[i]._id}" value = "${parsedData[i].place}" disabled = true></td>
-        <td><input type="tel" name ="phn" id="phone-${parsedData[i]._id}" value = "${parsedData[i].phn}" disabled = true></td>
+        <td><input type="tel" name ="phn" id="phone-${parsedData[i]._id}" value = "${parsedData[i].phone}" disabled = true></td>
         <td><button onClick="handleEdit('${parsedData[i]._id}')">EDIT</button></td>
+        <td><button onClick="handleSave('${parsedData[i]._id}')">SAVE</button></td>
+        <td><button onClick="handleDelete('${parsedData[i]._id}')">DELETE</button></td>
         </tr>
         `
     }
@@ -111,7 +113,73 @@ async function handleSave(id){
         body : jsonData,
     });
 
+    let parsed_response = await response.text();
+    console.log("parsed_response : ",parsed_response);
 
+    if (parsed_response == "success") {
+        alert ("updation success");
+    }else {
+        alert("updation failed");
+    }
 
     
+}
+
+
+async function handleDelete(id){
+
+    let fnameTag =document.getElementById(`fname-${id}`);
+    let fname = fnameTag.value;
+
+    let lnameTag =document.getElementById(`lname-${id}`);
+    let lname = lnameTag.value;
+
+    let unameTag =document.getElementById(`uname-${id}`);
+    let uname = unameTag.value;
+
+    let emailTag =document.getElementById(`email-${id}`);
+    let email = emailTag.value;
+
+    let pwordTag =document.getElementById(`pword-${id}`);
+    let pword = pwordTag.value;
+
+    let ageTag =document.getElementById(`age-${id}`);
+    let age = ageTag.value;
+
+    let placeTag =document.getElementById(`place-${id}`);
+    let place = placeTag.value;
+
+    let phoneTag =document.getElementById(`phone-${id}`);
+    let phone = phoneTag.value;
+
+    let data ={
+        id,
+        fname,
+        lname,
+        uname,
+        email,
+        pword,
+        age,
+        place,
+        phone,
+
+    }
+
+    let jsonData =JSON.stringify(data);
+    
+    let response = await fetch('http://localhost:3000/deleteData',{
+        method : "DELETE",
+        headers : {
+            "Content-Type": "application/json",
+        },
+        body : jsonData,
+    });
+
+    let parsed_response = await response.text();
+
+    if(parsed_response == "success") {
+        alert("Deletion Successful");
+    } else {
+        alert("Deletion Failed");
+    }
 }
