@@ -122,7 +122,7 @@ async function handleDelete(id){
 
     let jsonData =JSON.stringify(data);
     
-    let response = await fetch('http://localhost:3004/deleteData',{
+    let response = await fetch('/deleteData',{
         method : "DELETE",
         headers : {
             "Content-Type": "application/json",
@@ -130,11 +130,16 @@ async function handleDelete(id){
         body : jsonData,
     });
 
+    getData();
+
     let parsed_response = await response.text();
 
     if(parsed_response == "success") {
+
         alert("Deletion Successful");
     } else {
         alert("Deletion Failed");
     }
 }
+
+
