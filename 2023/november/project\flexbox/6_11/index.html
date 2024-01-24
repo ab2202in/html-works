@@ -1,85 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>playstation.en.com</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>PlayStation Website</title>
 </head>
 <body>
-    <div class="topnav">
-        <a href="#"><img src="./images/pngwing.com.png" style="width: 25px;" alt=""></a>
-        <a href="#games">Games</a>
-        <a href="#ps5">PS5</a>
-        <a href="#ps4">PS4</a>
-        <a href="#services">Services</a>
-        <a href="#accessories">Accessories</a>
-        <a href="#news">News</a>
-        <a href="store">Store</a>
-        <a href="support">Support</a>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">PlayStation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Consoles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accessories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to PlayStation</h1>
+    <p class="lead">Experience the ultimate gaming adventure with PlayStation!</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Explore Now</a>
+  </div>
+  
+  <div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="images/spider-man-2-hero-banner-desktop-07-en-16oct23.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="images/call-of-duty-modern-warfare-iii-early-access-hero-desktop-01-en-23oct23.webp" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="images/Apex-legends-S19-homepage-hero-desktop-en-02-19oct23.webp" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="images/alen-wake-2-hero-banner-desktop-01-en-17oct23.webp" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="images/ea-wrc-hero-banner-desktop-01-en-01nov23.webp" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="images/deep-earth-collection-red-and-blue-homepage-hero-banner-desktop-01-en-03nov23.webp"style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+  <!-- Featured Games Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Featured Games</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">Game 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
       </div>
-    
-
-      <div class="container">
-
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-          <div class="numbertext">1 / 6</div>
-            <img src="images/spider-man-2-hero-banner-desktop-07-en-16oct23.png" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">2 / 6</div>
-            <img src="images/call-of-duty-modern-warfare-iii-early-access-hero-desktop-01-en-23oct23.webp" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">3 / 6</div>
-            <img src="images/Apex-legends-S19-homepage-hero-desktop-en-02-19oct23.webp" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-            <img src="images/alen-wake-2-hero-banner-desktop-01-en-17oct23.webp" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-            <img src="images/ea-wrc-hero-banner-desktop-01-en-01nov23.webp" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-            <img src="images/deep-earth-collection-red-and-blue-homepage-hero-banner-desktop-01-en-03nov23.webp"style="width:100%">
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="images/spider-man-2-hero-banner-desktop-07-en-16oct23.png" style="width:100%" onclick="currentSlide(1)" alt="">
+      <!-- Add more game cards as needed -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Game 2">
+          <div class="card-body">
+            <h5 class="card-title">Game 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
-          <div class="column">
-            <img class="demo cursor" src="images/call-of-duty-modern-warfare-iii-early-access-hero-desktop-01-en-23oct23.webp" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Game 3">
+          <div class="card-body">
+            <h5 class="card-title">Game 3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
-          <div class="column">
-            <img class="demo cursor" src="images/Apex-legends-S19-homepage-hero-desktop-en-02-19oct23.webp" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Game 4">
+          <div class="card-body">
+            <h5 class="card-title">Game 4</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
-          <div class="column">
-            <img class="demo cursor" src="images/alen-wake-2-hero-banner-desktop-01-en-17oct23.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Game 5">
+          <div class="card-body">
+            <h5 class="card-title">Game 5</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
-          <div class="column">
-            <img class="demo cursor" src="images/ea-wrc-hero-banner-desktop-01-en-01nov23.webp" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/deep-earth-collection-red-and-blue-homepage-hero-banner-desktop-01-en-03nov23.webp" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Game 6">
+          <div class="card-body">
+            <h5 class="card-title">Game 6</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
 
-      <script src="script.js"></script>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2024 PlayStation. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
