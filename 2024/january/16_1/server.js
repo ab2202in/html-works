@@ -121,12 +121,3 @@ async function connect() {
 }
 
 connect();
-
-// $(".alert").show(() => {
-//   setTimeout(() => {
-//       $(".alert").fadeTo(500, 1).slideUp(500, () => {
-
-//           $(message).hide();
-//       })
-//   }, 5000)
-// });

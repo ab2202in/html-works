@@ -1,0 +1,31 @@
+*pass token in req headers
+
+*create a file checkLogin.js in utils
+
+*create a middleware function and exports in the checkLogin
+
+*import the function in the controller file
+
+*router.get('/users',checkLogin,userController.getData);
+
+
+
+checkLogin function (req,res)
+-------------------------------------------------------------------
+
+*get JWT token from req headers
+
+*validate token
+
+*decode JWT token using private key
+
+*take user_id from decoded token
+
+*find user with this user_id
+
+*if user found,write user_id to req and then execute "next()"
+
+*if user not found, execute error_function
+
+Logout function ()
+-------------------------------------------------------------------

@@ -80,19 +80,20 @@ async function handleSave(id){
             "Content-Type" : "applictaion/json",
         },
         body : jsonData,
-    });
+    })
 
     let parsed_response = await response.text();
     console.log("parsed_response : ",parsed_response);
 
     if (parsed_response == "success") {
-        getData();
+       
         alert ("updation success");
+        
     }else {
         alert("updation failed");
     }
 
-
+ getData();
     
 }
 

@@ -94,39 +94,39 @@ const addCartToHTML = () => {
     iconCartSpan.innerText = totalQuantity;
 }
 
-listCartHTML.addEventListener('click', (event) => {
-    let positionClick = event.target;
-    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
-        let product_id = positionClick.parentElement.parentElement.dataset.id;
-        let type = 'minus';
-        if(positionClick.classList.contains('plus')){
-            type = 'plus';
-        }
-        changeQuantityCart(product_id, type);
-    }
-})
-const changeQuantityCart = (product_id, type) => {
-    let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
-    if(positionItemInCart >= 0){
-        let info = cart[positionItemInCart];
-        switch (type) {
-            case 'plus':
-                cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1;
-                break;
+// listCartHTML.addEventListener('click', (event) => {
+//     let positionClick = event.target;
+//     if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
+//         let product_id = positionClick.parentElement.parentElement.dataset.id;
+//         let type = 'minus';
+//         if(positionClick.classList.contains('plus')){
+//             type = 'plus';
+//         }
+//         changeQuantityCart(product_id, type);
+//     }
+// })
+// const changeQuantityCart = (product_id, type) => {
+//     let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
+//     if(positionItemInCart >= 0){
+//         let info = cart[positionItemInCart];
+//         switch (type) {
+//             case 'plus':
+//                 cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1;
+//                 break;
         
-            default:
-                let changeQuantity = cart[positionItemInCart].quantity - 1;
-                if (changeQuantity > 0) {
-                    cart[positionItemInCart].quantity = changeQuantity;
-                }else{
-                    cart.splice(positionItemInCart, 1);
-                }
-                break;
-        }
-    }
-    addCartToHTML();
-    addCartToMemory();
-}
+//             default:
+//                 let changeQuantity = cart[positionItemInCart].quantity - 1;
+//                 if (changeQuantity > 0) {
+//                     cart[positionItemInCart].quantity = changeQuantity;
+//                 }else{
+//                     cart.splice(positionItemInCart, 1);
+//                 }
+//                 break;
+//         }
+//     }
+//     addCartToHTML();
+//     addCartToMemory();
+// }
 
 const initApp = () => {
     // get data product
